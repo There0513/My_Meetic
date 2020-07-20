@@ -1,0 +1,184 @@
+* {
+    /* background: rgb(53, 3, 53); */
+}
+body {
+    background-image: url(https://www.elisejulliard-photographies.fr/wp-content/uploads/2019/02/seance-photo-shooting-couple-amoureux-engagement-love-session-photographe-lyon-auvergne-rhone-alpes-croix-rousse-portrait-mariage-reportage-wedding-photographer-2.jpg);
+}
+.menu {
+    overflow: hidden;
+}
+
+#logout {
+    float: right;
+}
+
+li {
+    float: left;
+    list-style: none;
+}
+
+li a {
+    display: block;
+    color: burlywood;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: burlywood;
+    color: rgb(53, 7, 7);
+}
+
+.active {
+    background-color: burlywood;
+    color: rgb(53, 7, 7);
+}
+
+.container {
+    border: burlywood solid;
+    color: rgb(63, 28, 5);
+    font-size: 15px;
+    width: 30%;
+    float: right;
+    padding: 1%;
+    margin: auto;
+    margin-top: 3%;
+    margin-left: 3%;
+    height: auto;
+    /* overflow-y: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto; */
+}
+
+.container_2 { /*window for changing pw*/
+    border: burlywood solid;
+    color: rgb(63, 28, 5);
+    font-size: 15px;
+    width: 30%;
+    float: right;
+    padding: 1%;
+    margin: auto;
+    margin-top: 3%;
+    margin-left: 3%;
+    height: auto;
+    display: none;
+}
+
+.grid {
+    color: rgb(63, 28, 5);
+    font-size: 15px;
+    width: 75%;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    height: auto;
+    overflow-y: auto;
+}
+
+.needed {
+    color: red;
+}
+
+.error {
+    color: red;
+}
+
+.input {
+    display: none   ;
+}
+
+.go_show_results {
+    background-color: burlywood;
+    position: relative;
+    overflow: hidden;
+    padding: 3px;
+    /* float: right; */
+}
+
+.prev .next {
+    float: left;
+    margin-top: 130px;
+    cursor: pointer;
+}
+
+.prev {
+    position: relative;
+    z-index: 100;
+}
+
+.next {
+    position: relative;
+    z-index: 100;
+}
+.slide2 {
+    display: none;
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
