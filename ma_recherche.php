@@ -29,7 +29,6 @@ include 'pdo.php' ?>
         <form id="recherche" action="" method="post">
             <input type="hidden" id="get_mail" value="<?php echo $_GET['mail']; ?>">
             <p>Genre :<br><br>
-                <!-- $('#genre option:selected').text() -->
                 <select name="genre" id="genre">
                     <option name="genre" value=""> Genre</option>
                     <option name="genre1" value="autres"> Autres</option>
@@ -42,23 +41,17 @@ include 'pdo.php' ?>
                     Marseille <input name="ville2" value="marseille" type="checkbox">
                     Lyon <input name="ville3" value="lyon" type="checkbox">
                     <input id="ville4" name="ville4" class="ville" type="text" placeholder="autre Ville">
-                    <!-- ______ Autre <input type="text" placeholder="autre"> -->
                 </div>
-                <!-- $("#ville").children("input:checked").val() -->
-                <!-- $('.ville').val() -->
             </p>
             <p>Loisir :
-                <!-- $("#loisir").children("input:checked").val() -->
                 <div id="loisir" name="loisir">
                     Coder <input name="loisir1" value="coder" type="checkbox">
                     Danser <input name="loisir2" value="danser" type="checkbox">
                     Lécture <input name="loisir3" value="lecture" type="checkbox">
                     Cinéma <input name="loisir4" value="cinema" type="checkbox"><br>
-                    <!-- ______ Autre <input type="text" placeholder="autre"> -->
                 </div>
             </p>
             <p>Age :<br><br>
-                <!-- $('#age option:selected').text() -->
                 <select name="age" id="age">
                     <option name="age" value=""> Age</option>
                     <option name="age1" value="1">18-25</option>
@@ -80,14 +73,9 @@ include 'pdo.php' ?>
                             var input = $(this);
                             var var_name = $(this).attr('name')
                             filter += '&' + var_name + '=' + input.val();
-                            //     checked_ville.push($(this).val());
-                            // $('#result').html('Value: ' + input.val());
-                            // alert('Value: ' + input.val()); //+$('.ville').val() for 'autre ville'
                         },
                     );
-                    // $("#result").html(filter);
                     location.href = 'ma_recherche1.php?mail=' + get_mail.value + filter;
-                    // ->/ma_recherche.php?mail=johann@gmail.comundefinedfemmepariscoder1
                     e.preventDefault();
                     $.post(
                         'filter.php', {
